@@ -9,19 +9,12 @@ function App() {
   return (
     <div className="App">
 
-<Router>
+      <Router>
+        <Navbar />
         <Routes>
-        <Route path="/" >
-          <Route index element = {<> <Navbar /> < Home /> </> } />
-          <Route path="menu"  element = {<> <Navbar /> </> } />
-          <Route path="about"  element = {<> <Navbar /> </> } />
-          <Route path="contact"  element = {<> <Navbar /> </> } />
-        </Route>
-       </Routes>
-       <Footer/>
+        <Route path="/" exact component={Home} />
+        </Routes>
       </Router>
-  
-    </div>
   );
 }
 
