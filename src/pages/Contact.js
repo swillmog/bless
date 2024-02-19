@@ -9,7 +9,7 @@ function Contact() {
           style={{ backgroundImage: `url(${PizzaLeft})`}}>
           
           </div>
-          <div className="rightSide"></div>
+          <div className="rightSide">
          <h1> Contact Us </h1>
       <form id="contact-form" method="POST">
         <label htmlFor="name"> Full Name </label>
@@ -21,6 +21,7 @@ function Contact() {
         <button type="submit"> Send Message </button>
 
       </form>
+      </div>
     </div>
   );
 }
